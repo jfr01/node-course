@@ -3,6 +3,9 @@ const util = require("util");
 const readFilePromise = util.promisify(readFile);
 const writeFilePromise = util.promisify(writeFile);
 
+
+// async pattern using promise and await
+
 const start = async () => {
   try {
     const first = await readFilePromise("Tutorial/content/first.txt", "utf8");
